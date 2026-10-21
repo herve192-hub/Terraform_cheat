@@ -1,0 +1,22 @@
+# Ignore Terraform provider downloads and local working data for this example.
+/.terraform/
+
+# State may contain sensitive information about managed infrastructure.
+*.tfstate
+*.tfstate.*
+
+# Ignore generated plans, crash logs, and local variable values.
+*.tfplan
+*.plan
+crash.log
+crash.*.log
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+!*.tfvars.json.example
+
+# Ignore local-only configuration overrides.
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json

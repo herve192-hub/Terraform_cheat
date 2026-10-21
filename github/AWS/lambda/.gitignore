@@ -1,0 +1,30 @@
+# Ignore Terraform provider downloads and local working data for this example.
+/.terraform/
+
+# State may contain sensitive information about managed infrastructure.
+*.tfstate
+*.tfstate.*
+
+# Ignore generated plans, crash logs, and local variable values.
+*.tfplan
+*.plan
+crash.log
+crash.*.log
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+!*.tfvars.json.example
+
+# Ignore the ZIP archive generated from lambda_function.py.
+/lambda.zip
+
+# Ignore local Python bytecode and the AWS CLI invocation response.
+__pycache__/
+*.py[cod]
+/response.json
+
+# Ignore local-only configuration overrides.
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json

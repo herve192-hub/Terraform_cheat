@@ -1,0 +1,37 @@
+# Terraform working directories contain downloaded providers and local caches.
+.terraform/
+
+# Terraform state can contain sensitive infrastructure details.
+*.tfstate
+*.tfstate.*
+
+# Ignore generated plans and execution logs.
+*.tfplan
+*.plan
+crash.log
+crash.*.log
+
+# Variable files can contain credentials or environment-specific values.
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+!*.tfvars.json.example
+
+# Ignore Terraform override files that alter normal configuration locally.
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Keep local credentials and private keys out of the repository.
+.env
+.env.*
+!.env.example
+.aws/
+*.pem
+*.key
+
+# Ignore common operating-system and editor-generated files.
+.DS_Store
+Thumbs.db
+.vscode/

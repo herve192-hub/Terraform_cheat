@@ -1,7 +1,7 @@
 # Ignore Terraform provider downloads and local working data for this example.
 /.terraform/
 
-# State may contain sensitive information about managed infrastructure.
+# State may contain sensitive repository and provider data.
 *.tfstate
 *.tfstate.*
 

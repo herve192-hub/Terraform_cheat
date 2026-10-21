@@ -1,0 +1,15 @@
+# Choose "user" for a personal account or "organization" for an organization.
+repository_owner_type   = "user"
+github_username         = "your-github-username"
+# Set repository_owner_type to "organization" and provide its name instead
+# when creating the repository under an organization:
+# repository_owner_type = "organization"
+# organization_name     = "your-github-organization"
+
+repository_name         = "terraform-managed-example"
+repository_visibility   = "private"
+repository_description = "Example GitHub repository managed with Terraform"
+default_branch          = "main"
+
+# Set to 0 if you are the only contributor and cannot provide a second approval.
+required_approving_review_count = 1
